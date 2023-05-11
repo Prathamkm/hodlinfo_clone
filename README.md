@@ -1,7 +1,10 @@
 # Hodlinfo Clone
 
 In this project, the top 10 tickers are shown on the frontend which is fetched by API which is made in the backend with the help of nodejs.
-
+# Branches
+there are two branch 
+1-> hodlinfo-backend
+2-> hodlinfo-frontend
 ## Installation
 
 Use npm i command in both frontend and backend for installing required npm packages.
@@ -11,7 +14,8 @@ npm i
 ```
 
 ## Variables for .env file
-
+### backend
+first you have to make config.env file in ./data
 variables name = PORT, MONGO_URI, FRONTEND_URL
 PORT is for backend url port number MONGO_URI is for url of mongodb and assign the frontend url in FRONTEND_URL
 
