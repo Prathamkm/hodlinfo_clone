@@ -1,5 +1,6 @@
 const express = require("express");
-const top10Router = require("./routes/tickers.js");
+const topTenRouter = require("./routes/tickers.js");
+const storeTopTen = require("./utils/storeTopTen.js");
 const dotenv = require("dotenv");
 const cors = require("cors");
 const app = express();
@@ -14,8 +15,10 @@ app.use(
     credentials: true,
   })
 );
-app.use("/api/v1/hodlinfo", top10Router);
+storeTopTen();
+app.use("/api/v1/hodlinfo", topTenRouter);
 app.get("/", (req, res) => {
+  console.log(process.env.FRONTEND_URL);
   res.send("Nice Working");
 });
 
