@@ -15,5 +15,5 @@ npm i
 variables name = PORT, MONGO_URI, FRONTEND_URL
 PORT is for backend url port number MONGO_URI is for url of mongodb and assign the frontend url in FRONTEND_URL
 
-Please make sure if you don't listen backend server at 4000 then change the api url in frontend in main.jsx file accordingly.
+Please make sure if you don't listen backend server at 4000 then change the api url in frontend in ./src/component/main.jsx file accordingly.
 
